@@ -1,6 +1,6 @@
 import { DateSeparatorProps } from "stream-chat-react";
 
-export default function CustomDateSeparator(
+export default function CustomDateSeparator( 
   props: DateSeparatorProps
 ): JSX.Element {
   const { date } = props;
