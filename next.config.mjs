@@ -1,4 +1,46 @@
+// /** @type {import('next').NextConfig} */
+// const nextConfig = {
+
+// };
+
+// export default nextConfig;
+
+
+
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'source.unsplash.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'getstream.io',
+      },
+      {
+        protocol: 'https',
+        hostname: 'thispersondoesnotexist.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'cdn.discordapp.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'static.wikia.nocookie.net',
+      },
+      {
+        protocol: 'https',
+        hostname: 'starwars.fandom.com',
+      },
+    ],
+  },
+};
 
 export default nextConfig;
